@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Combination Calculator</title>
+</head>
+<body>
+  <h1>Combination Calculator</h1>
+  <p id="result"></p>
+  <script type="text/javascript">
+    function factorial(n) {
+      let result = 1;
+      for (let i = 1; i <= n; i++) {
+        result *= i;
+      }
+      return result;
+    }
+
+    function combination(n, r) {
+      return factorial(n) / (factorial(r) * factorial(n - r));
+    }
+    const X = 35;  
+    const Y = 35;
+    let result;
+
+    if (X > Y) {
+      result = X > Y, so (X) function combination{Y} (C({X}, {Y})) is:  + combination(X, Y);
+    } else if (Y > X) {
+      result = Y > X, so {Y} combination {X} (C({Y}, {X})) is:  + combination(Y, X);
+    } else {
+      result = X = Y, so (X + 1) combination {Y} C({X + 1}, {Y}) is:  + combination(X + 1, Y);
+    }
+
+    document.getElementById("result").textContent = result;
+  </script>
+</body>
+</html>
