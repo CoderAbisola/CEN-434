@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>JAVASCRIPT FACTORIAL</h1>
+        <p id="answer"></p>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function factorial(n) {
+  if (n === 0) {
+    return 1;
+  } else {
+    return n * factorial(n-1);
+  }
+}
+  const result =factorial(23)
+document.getElementById("answer").innerHTML = "The factorial of 23: " + result;
+
+        </script>
+    </body>
+</html>
+
+
